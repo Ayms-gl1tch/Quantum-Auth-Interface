@@ -11,7 +11,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Syncopate:wght@400;700&display=swap');
 
     :root {
-      --glow: #00ff41; /* Classic Hacker Green */
+      --glow: #00ff41; 
       --bg: #000500;
     }
 
@@ -34,13 +34,13 @@
       background: rgba(0, 20, 0, 0.85);
       border: 1px solid var(--glow);
       box-shadow: 0 0 20px rgba(0, 255, 65, 0.2), inset 0 0 10px rgba(0, 255, 65, 0.1);
-      border-radius: 2px; /* Brutalist sharp edges */
+      border-radius: 2px; 
       padding: 40px;
       transform-style: preserve-3d;
       position: relative;
     }
 
-    /* Corner brackets for advanced look */
+   
     .quantum-card::before, .quantum-card::after {
       content: ''; position: absolute; width: 20px; height: 20px;
       border: 2px solid var(--glow);
@@ -123,7 +123,7 @@
   </div>
 
   <script>
-    // --- 1. THE FLOW FIELD ENGINE ---
+    
     const canvas = document.getElementById('flowfield');
     const ctx = canvas.getContext('2d');
     let particles = [];
@@ -180,7 +180,7 @@
     init(); animate();
     window.addEventListener('resize', init);
 
-    // --- 2. THE TERMINAL BOOT LOG ---
+   
     const logs = [
       "Initialising quantum handshake...",
       "Bypassing firewall nodes...",
@@ -199,7 +199,7 @@
     }
     updateLog();
 
-    // --- 3. THE GLITCH BUTTON ---
+    
     const btn = document.getElementById('loginBtn');
     const originalText = btn.innerText;
     const chars = "ABCDEFGHIJKLMN0123456789!@#$%^&*";
